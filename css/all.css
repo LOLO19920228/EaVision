@@ -15248,4 +15248,9 @@ li {
   -webkit-box-shadow: 0px 0px 10px #0000001A;
           box-shadow: 0px 0px 10px #0000001A;
 }
+
+.advantages .advantagesCard h3 {
+  top: calc(50% - 16.5px);
+  left: calc(50% - 56px);
+}
 /*# sourceMappingURL=all.css.map */
