@@ -1,0 +1,65 @@
+.line-height-1 {
+    line-height: 1;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center center;
+}
+.filter-4{
+    opacity: .4;
+    background: #000;
+    height: 100%;
+    width: 100%;
+}
+.filter-4-hover:hover{
+    .filter-4{
+        opacity: 0;
+    }
+}
+.align-origin{
+    top: 0;
+    left: 0;
+}
+.object-cover {
+    object-fit: cover!important;
+}
+
+.fz-sm {
+    font-size: $font-size-base;
+}
+.fz-nl {
+    font-size: $font-size-base * 1.25;
+}
+.fz-xl {
+    font-size: $font-size-base * 1.5;
+}
+.fz-xxl {
+    font-size: $font-size-base * 1.75;
+}
+.fz-mobile-nl {
+    @include mobile {
+        font-size: $font-size-base * 1;
+    }
+}
+.fz-title-nl {
+    font-size: $font-size-base * 2;
+}
+.fz-title-xl {
+    font-size: $font-size-base * 3;
+}
+.fz-title-xxl {
+    font-size: $font-size-base * 3.75;
+}
+.fz-mobile-title-xl {
+    @include mobile {
+        font-size: $font-size-base * 2;
+    }
+}
+.fz-mobile-title-xxl {
+    @include mobile {
+        font-size: $font-size-base * 2.5;
+    }
+}
+.font-weight-medium {
+    font-weight: 500 !important;
+}

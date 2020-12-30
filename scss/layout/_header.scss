@@ -1,0 +1,32 @@
+.header{
+    .logo{
+        height: 40px;
+    }
+    // 電腦全螢幕時選單的字大一點
+    .nav-item a{
+        @include full-screen-pc {
+            font-size: 18px;
+        }
+    }
+    // 調整語言列表大小
+    .dropdown-menu{
+        min-width: 0;
+    }
+    //調整漢堡選單
+    .navbar-toggler {
+        border: none;
+        right: 15px;
+        top: 10px;
+        span {
+            font-size: 44px;
+        }
+    }
+    .navbar-collapse li a{
+        @include mobile {
+            border-bottom: 1px solid $white;
+            padding-top: 14px;
+            padding-bottom: 13px;
+            font-weight: 500;
+          }
+    }
+}

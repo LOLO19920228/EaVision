@@ -1,0 +1,58 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none !important;
+    display: block;
+    color: $black;
+}
+html {
+    font-size: $font-size-base;
+}
+body {
+    font-family: $font-family-base;
+    line-height: $line-height-base;
+    padding-top: 64px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+ul,
+ol,
+li {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+.fixed-bg {
+    background-image: url(../images/background.jpg);
+    position: fixed; 
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -999; /*設定圖片層級*/
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
