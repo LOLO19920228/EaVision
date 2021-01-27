@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,18 +31,22 @@
     <title>鷹勢科技EaVision</title>
     <!-- google字體 -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- MaterialIcons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="./css/all.css">
 </head>
 
 <body>
     <!-- 固定背景 -->
     <div class="fixed-bg"></div>
-    
+
     <!-- header -->
     <header class="header fixed-top bg-primary">
         <div class="container">
@@ -51,53 +56,58 @@
                         <img class="logo mr-lg-1" src="./images/logo.svg" alt="鷹勢科技">
                         <span class="d-none d-lg-block">鷹勢科技</span>
                     </a>
-                </h1> 
-                <button class="navbar-toggler position-absolute" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                </h1>
+                <button class="navbar-toggler position-absolute" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="material-icons text-white">menu</span>
                 </button>
-              
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                      <a class="nav-link text-white text-center" href="#">AI影像實力</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white text-center" href="#">優勢與特色</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white text-center" href="#">產品應用</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white text-center" href="#">服務項目</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white text-center" href="#">關於我們</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link text-white text-center" href="#">聯絡我們</a>
-                    </li>
-                    <li class="nav-item dropdown d-none d-lg-block">
-                      <a class="nav-link dropdown-toggle text-white text-center bg-secondary rounded-pill" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="material-icons">language</span>TW
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item disabled" href="#">English</a>
-                      </div>
-                    </li>
-                    
-                  </ul>
-                  
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">AI影像實力</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">優勢與特色</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">產品應用</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">服務項目</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white text-center" href="#">聯絡我們</a>
+                        </li>
+                        <li class="nav-item dropdown d-none d-lg-block">
+                            <a class="nav-link dropdown-toggle text-white text-center bg-secondary rounded-pill"
+                                href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <span class="material-icons">language</span>TW
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item disabled" href="#">English</a>
+                            </div>
+                        </li>
+
+                    </ul>
+
                 </div>
-              </nav>
+            </nav>
         </div>
     </header>
 
     <!-- banner -->
     <section class="banner position-relative">
-        <img class="w-100 object-cover position-absolute" src="./images/banner01.jpg" alt="">
+        <img id="banner" class="w-100 object-cover position-absolute" alt="banner">
         <div class="container d-flex flex-column justify-content-between">
             <div class="slogan">
-                <h2 class="text-white text-center fz-title-xxl mb-md-12 mb-8 font-weight-medium">AI客製化專家</h2>
+                <h2 class="text-white text-center fz-title-xxl fz-mobile-title-xxl mb-md-12 mb-8 font-weight-medium">
+                    AI客製化專家</h2>
                 <h4 class="text-white text-center fz-title-nl d-none d-md-block">機器學習 X 深度學習 X 數據分析 X 計算機視覺</h4>
                 <h4 class="text-white text-center fz-title-nl d-md-none">機器學習 X 深度學習<br>數據分析 X 計算機視覺</h4>
             </div>
@@ -110,10 +120,11 @@
                         </div>
                         <div class="col-4 border-right border-white">
                             <p class="text-info text-center fz-title-xl fz-mobile-title-xl font-weight-medium">AI</p>
-                            <p class="text-white text-center fz-xxl fz-mobile-nl">深度學習演算</p>
+                            <p class="text-white text-center fz-xxl fz-mobile-nl">深度學習</p>
                         </div>
                         <div class="col-4">
-                            <p class="text-info text-center fz-title-xl fz-mobile-title-xl font-weight-medium">300套+</p>
+                            <p class="text-info text-center fz-title-xl fz-mobile-title-xl font-weight-medium">
+                                300<sup>+</sup>套</p>
                             <p class="text-white text-center fz-xxl fz-mobile-nl">案場採用</p>
                         </div>
                     </div>
@@ -141,7 +152,7 @@
                     <div class="col-8 technologyCard" data-aos="flip-left">
                         <h4 class="text-info text-center py-6">快速</h4>
                         <p class="text-white text-center mb-6">分析速度快<br>處理時間較短</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -151,17 +162,17 @@
                     <div class="col-8 technologyCard" data-aos="flip-left">
                         <h4 class="text-info text-center py-6">微小</h4>
                         <p class="text-white text-center mb-6">嵌入式能力<br>最少資源做大事情</p>
-                        
+
                     </div>
                 </div>
             </div>
             <div class="col-md-3 d-flex flex-column justify-content-center">
-                <div class="technologyImg technologyImg01 bg-cover"></div>
+                <div class="technologyImg technologyImg04 bg-cover"></div>
                 <div class="row justify-content-center">
                     <div class="col-8 technologyCard" data-aos="flip-left">
                         <h4 class="text-info text-center py-6">通用</h4>
                         <p class="text-white text-center mb-6">不需演算法框架<br>支援跨平台</p>
-                        
+
                     </div>
                 </div>
             </div>
@@ -171,24 +182,358 @@
     <!-- 優勢與特色 -->
     <section class="advantages container mb-10 mb-md-15">
         <h2 class="text-center text-white fz-title-xxl fz-mobile-title-xxl mb-8">優勢與特色</h2>
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-4 position-relative advantagesCard">
-                <img src="./images/ai_blue_circle_large.svg" alt="">
+        <div class="row advantagesPC">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 advantagesCard position-relative">
+                <img src="./images/advantages-title-lg.svg" alt="">
                 <h3 class="position-absolute text-white">高適應力</h3>
+                <div class="advantagesCardSubitem-01">
+                    <img src="./images/advantages-01.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">大角度<br>精準定位</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-02">
+                    <img src="./images/advantages-02.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">低光源</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-03">
+                    <img src="./images/advantages-03.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">環境<br>不受限</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-04">
+                    <img src="./images/advantages-04.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">智能學習</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-05">
+                    <img src="./images/advantages-05.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">反光、<br>過度曝光</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-2"></div>
-            <div class="col-md-4 position-relative advantagesCard">
-                <img src="./images/ai_blue_circle_large.svg" alt="">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4 position-relative advantagesCard">
+                <img src="./images/advantages-title-lg.svg" alt="">
                 <h3 class="position-absolute text-white">高判斷力</h3>
+                <div class="advantagesCardSubitem-01">
+                    <img src="./images/advantages-06.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">克服各種<br>字體底色</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-02">
+                    <img src="./images/advantages-07.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">破損文字</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-03">
+                    <img src="./images/advantages-08.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">污損瓶頸</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-04">
+                    <img src="./images/advantages-09.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">全區偵測</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-05">
+                    <img src="./images/advantages-10.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">不用傳統<br>文字過濾</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-1"></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4 position-relative advantagesCard">
-                <img src="./images/ai_blue_circle_large.svg" alt="">
-                <h3 class="position-absolute text-white">高客制化</h3>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 position-relative advantagesCard mt-15">
+                <img src="./images/advantages-title-lg.svg" alt="">
+                <h3 class="position-absolute text-white">高客製化</h3>
+                <div class="advantagesCardSubitem-02">
+                    <img src="./images/advantages-11.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">支援文字<br>單雙行</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-03">
+                    <img src="./images/advantages-12.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">多語言</h4>
+                    </div>
+                </div>
+                <div class="advantagesCardSubitem-04">
+                    <img src="./images/advantages-13.png" alt="">
+                    <div class="advantagesCardSubitemText position-absolute">
+                        <h4 class="text-white fz-sm text-center">多種外文<br>字形</h4>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4"></div>
+            <div class="col-lg-4"></div>
+        </div>
+        <div class="d-lg-none">
+            <div class="advantagesCard row mb-4">
+                <div class="position-relative mb-6">
+                    <img src="./images/advantages-title-sm.png" alt="">
+                    <h3 class="position-absolute text-white font-weight-medium">AI高適應力</h3>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-01.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">大角度精準定位</h4>
+                    <p class="text-white fz-sm text-center">自適應梯形校正<br>優化俯角及傾角場域</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-02.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">低光源</h4>
+                    <p class="text-white fz-sm text-center">克服場域的光源限制</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-03.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">環境不受限</h4>
+                    <p class="text-white fz-sm text-center">適應高溫日曬<br>光源變化</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-04.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">智能學習</h4>
+                    <p class="text-white fz-sm text-center">適應新環境<br>辨識新物件</p>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-05.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">反光、過度曝光</h4>
+                    <p class="text-white fz-sm text-center">克服突發狀況所造成的辨識失敗</p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="advantagesCard row mb-4">
+                <div class="position-relative mb-6">
+                    <img src="./images/advantages-title-sm.png" alt="">
+                    <h3 class="position-absolute text-white font-weight-medium">AI高判斷力</h3>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-06.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">克服各種字體底色</h4>
+                    <p class="text-white fz-sm text-center">不需配合軟體<br>改變既有產品</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-07.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">破損文字</h4>
+                    <p class="text-white fz-sm text-center">交給鷹勢前處理<br>還原影像</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-08.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">污損瓶頸</h4>
+                    <p class="text-white fz-sm text-center">AI技術<br>增加準確率</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-09.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">不用傳統文字過濾</h4>
+                    <p class="text-white fz-sm text-center">不會因為一點不一樣<br>就造成辨識失敗</p>
+                </div>
+                <div class="col-3"></div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-10.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">不用傳統文字過濾</h4>
+                    <p class="text-white fz-sm text-center">不會因為一點不一樣<br>就造成辨識失敗</p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="advantagesCard row mb-4">
+                <div class="position-relative mb-6">
+                    <img src="./images/advantages-title-sm.png" alt="">
+                    <h3 class="position-absolute text-white font-weight-medium">AI高客製化</h3>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-11.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">支援文字單雙行</h4>
+                    <p class="text-white fz-sm text-center">符合用戶的文字呈現</p>
+                </div>
+                <div class="col-6 align-items-center mb-4">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-12.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">多語言</h4>
+                    <p class="text-white fz-sm text-center">多種語言不是問題</p>
+                </div>
+
+                <div class="col-3"></div>
+                <div class="col-6 align-items-center ">
+                    <div class="d-flex justify-content-center">
+                        <img src="./images/advantages-13.png" alt="">
+                    </div>
+                    <h4 class="text-white fz-sm text-center font-weight-medium mb-1">多種外文字行</h4>
+                    <p class="text-white fz-sm text-center">特殊標示與文字<br>都能學習</p>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 產業應用案例 -->
+    <section class="applications container mb-10 mb-md-15 mt-md-30">
+        <h2 class="text-center text-white fz-title-xxl fz-mobile-title-xxl mb-8">產業應用案例</h2>
+        <div class="d-flex justify-content-center flex-wrap mb-md-8 mb-4">
+            <button id="applicationsBtnLicensePlateRecognition" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-6t active">車牌辨識系統</button>
+            <button id="applicationsBtnBehaviorDetection" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-6t">行為追蹤系統</button>
+            <button id="applicationsBtnFoodProcessing" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-5t">食品加工業</button>
+            <button id="applicationsBtnMedicineBiotechnology" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-5t">醫藥生技業</button>
+            <button id="applicationsBtnElectronic" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-3t">電子業</button>
+            <button id="applicationsBtnMetalProcessing" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-5t">金屬加工業</button>
+            <button id="applicationsBtnPetrochemical" type="button"
+                class="applicationsBtn btn btn-outline-success mx-2 mb-2 btn-3t">石化業</button>
+        </div>
+
+        <!-- Swiper -->
+        <div>
+            <div class="swiper-container" id="applicationsBtnLicensePlateRecognitionContent">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-white">
+                        <div class="row">
+                            <img class="col-md-6" src="./images/applicationsLicensePlateRecognition01.jpg" alt="">
+                            <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="text-success fz-sm mb-1">車牌辨識系統</h3>
+                                    <h4 class="text-white fz-xl font-weight-medium mb-3">高難度特殊場域 車牌辨識系統</h4>
+                                    <p class="text-white fz-nl">不論是低光源、不打光、高傾角及仰角都可達到99%以上的高辨識率。</p>
+                                </div>
+                                <ul class="d-flex">
+                                    <li class="tag">車牌辨識</li>
+                                    <li class="tag">汽車</li>
+                                    <li class="tag">國內</li>
+                                    <li class="tag">停車場</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-white">
+                        <div class="row">
+                            <img class="col-md-6" src="./images/applicationsLicensePlateRecognition02.jpg" alt="">
+                            <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="text-success fz-sm mb-1">車牌辨識系統</h3>
+                                    <h4 class="text-white fz-xl font-weight-medium mb-3">車牌辨識系統(國外)</h4>
+                                    <p class="text-white fz-nl">各國車牌皆可辨識，目前我司產品已商用逾四個國家，辨識難度較高的東南亞皆可準確辨識</p>
+                                </div>
+                                <ul class="d-flex">
+                                    <li class="tag">車牌辨識</li>
+                                    <li class="tag">汽車</li>
+                                    <li class="tag">國外</li>
+                                    <li class="tag">智慧路燈</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <div class="swiper-container d-none" id="applicationsBtnBehaviorDetectionContent">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-white">
+                        <div class="row">
+                            <img class="col-md-6" src="./images/applicationsBtnBehaviorDetection01.png" alt="">
+                            <div class="col-md-6 p-4 d-flex flex-column justify-content-between">
+                                <div>
+                                    <h3 class="text-success fz-sm mb-1">行為追蹤系統</h3>
+                                    <h4 class="text-white fz-xl font-weight-medium mb-3">針對使用者行為做出特定追蹤</h4>
+                                    <p class="text-white fz-nl">白天與晚上皆能穩定偵測是否有異狀，是否需要發出警報並記錄發生的時間。</p>
+                                    <a class="btn btn-primary mt-2" href="https://youtu.be/Cq4obdJKZpw" target="_blank" role="button">觀看Demo影片</a>
+                                </div>
+                                <ul class="d-flex">
+                                    <li class="tag">行為追蹤</li>
+                                    <li class="tag">汽車</li>
+                                    <li class="tag">國內</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide text-white">Slide 2</div>
+                    <div class="swiper-slide text-white">Slide 3</div>
+                    <div class="swiper-slide text-white">Slide 4</div>
+                    <div class="swiper-slide text-white">Slide 5</div>
+                    <div class="swiper-slide text-white">Slide 6</div>
+                    <div class="swiper-slide text-white">Slide 7</div>
+                    <div class="swiper-slide text-white">Slide 8</div>
+                    <div class="swiper-slide text-white">Slide 9</div>
+                    <div class="swiper-slide text-white">Slide 10</div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 服務項目 -->
+    <section class="services container mb-10 mb-md-15">
+        <h2 class="text-center text-white fz-title-xxl fz-mobile-title-xxl mb-8">服務項目</h2>
+        <div class="row">
+            <div class="col-md-4 servicesCard mb-7 mb-md-0">
+                <div class="servicesCardImg servicesCardDevelopment bg-cover px-4 py-2 d-flex align-items-end">
+                    <h3 class="text-success font-weight-medium">客製化AI開發</h3>
+                </div>
+                <div class="servicesCardContent px-4 py-2">
+                    <p class="text-white">不論您是設備商、供應商、大型企業集團或中小企業，鷹勢科技都能滿足您各式客製化AI影像辨識的需求。</p>
+                </div>
+            </div>
+            <div class="col-md-4 servicesCard mb-7 mb-md-0">
+                <div class="servicesCardImg servicesCardDetect bg-cover px-4 py-2 d-flex align-items-end">
+                    <h3 class="text-success font-weight-medium">企業AI健檢</h3>
+                </div>
+                <div class="servicesCardContent px-4 py-2">
+                    <p class="text-white">您的企業是否適合導入AI？導入AI可以提升多少效率或降低多少成本？傳統方法是否就可以解決問題？鷹勢科技幫助您針對狀況進行評估，提出最佳解決方案。</p>
+                </div>
+            </div>
+            <div class="col-md-4 servicesCard mb-7 mb-md-0">
+                <div class="servicesCardImg servicesCardSoftware bg-cover px-4 py-2 d-flex align-items-end">
+                    <h3 class="text-success font-weight-medium">客製化軟體開發</h3>
+                </div>
+                <div class="servicesCardContent px-4 py-2">
+                    <p class="text-white">客製化AI專家的鷹勢科技也很懂傳統！ 不論是傳統軟體開發、傳統OCR影像辨識、網頁及使用者介面設計開發都交給我們。</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -200,9 +545,8 @@
         crossorigin="anonymous"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="./js/all.js"></script>
 </body>
 

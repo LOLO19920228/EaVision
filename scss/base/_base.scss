@@ -1,6 +1,7 @@
 img {
     max-width: 100%;
     height: auto;
+    display: block;
 }
 a {
     text-decoration: none !important;
@@ -40,8 +41,13 @@ li {
     margin-bottom: 0;
 }
 .fixed-bg {
-    background-image: url(../images/background.jpg);
+    // background-image: url(../images/background_v1.jpg);
+    // background-image: url(../images/background_v2.png);
+    // background-image: url(../images/background_v3.png);
+    background-image: url(../images/background_v4.png);
     position: fixed; 
+    // filter: brightness(50%);
+    // filter: brightness(50%) blur(5px);
     left: 0;
     right: 0;
     top: 0;

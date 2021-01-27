@@ -13,12 +13,16 @@
         min-width: 0;
     }
     //調整漢堡選單
+    
     .navbar-toggler {
         border: none;
-        right: 15px;
-        top: 10px;
+        right: 0;
+        top: 6px;
         span {
             font-size: 44px;
+        }
+        @include small-screen-mobile{
+            margin-right: -15px;
         }
     }
     .navbar-collapse li a{

@@ -66,7 +66,7 @@ $colors: map-merge(
 
 $primary:       #000B17 !default; //$blue !default;
 $secondary:     #26384a !default; //$gray-600 !default;
-$success:       $green !default;
+$success:       #9DE5FF !default;//$green !default;
 $info:          #9DFBFF !default; //$cyan!default;
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -160,6 +160,7 @@ $spacers: map-merge(
     25: ($spacer * 6.25),
     26: ($spacer * 6.5),
     27: ($spacer * 6.75),
+    30: ($spacer * 7.5),
   ),
   $spacers
 );

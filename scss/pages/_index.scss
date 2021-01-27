@@ -1,54 +1,172 @@
-.banner{
+.banner {
     width: 100%;
     height: calc(100vh - 64px);
-    img{
+    img {
         top: 0;
         height: 90%;
         border-bottom-right-radius: 50vw 15vh;
         border-bottom-left-radius: 50vw 15vh;
         z-index: -100;
     }
-    .container{
+    .container {
         height: 100%;
         padding-bottom: 5vh;
-        .slogan{
+        .slogan {
             padding-top: 20vh;
         }
-        .focusArea{
-            background-image: linear-gradient(to bottom, #09458D, #052347);
+        .focusArea {
+            background-image: linear-gradient(to bottom, #09458d, #052347);
             border-radius: 25px;
             box-shadow: 0px 2px 20px #00000099;
-            opacity: .9;
+            opacity: 0.9;
         }
     }
 }
 
-.technology{
-    .technologyImg{
+.technology {
+    .technologyImg {
         height: 242px;
     }
-    .technologyImg01{
+    .technologyImg01 {
         background-image: url(../images/technologyImg01.jpg);
     }
-    .technologyImg02{
+    .technologyImg02 {
         background-image: url(../images/technologyImg02.jpg);
     }
-    .technologyImg03{
+    .technologyImg03 {
         background-image: url(../images/technologyImg03.jpg);
     }
-    .technologyCard{
+    .technologyImg04 {
+        background-image: url(../images/technologyImg04.jpg);
+    }
+    .technologyCard {
         margin-top: -80px;
         border-radius: 15px;
-        background-image: linear-gradient(to bottom, #09458D, #052347);
-        box-shadow: 0px 0px 10px #0000001A;
+        background-image: linear-gradient(to bottom, #09458d, #052347);
+        box-shadow: 0px 0px 10px #0000001a;
     }
 }
 
-.advantages{
-    .advantagesCard{
-        h3{
-            top: calc(50% - 16.5px);
-            left: calc(50% - 56px);
+.advantages {
+    @include pc {
+        .advantagesCard {
+            h3 {
+                top: calc(50% - 16.5px);
+                left: calc(50% - 56px);
+            }
+            .advantagesCardSubitemText {
+                width: 60px;
+                white-space: nowrap;
+            }
+            .advantagesCardSubitem-01,
+            .advantagesCardSubitem-02,
+            .advantagesCardSubitem-03,
+            .advantagesCardSubitem-04,
+            .advantagesCardSubitem-05 {
+                img {
+                    width: 60px;
+                }
+                position: absolute;
+            }
+            .advantagesCardSubitem-01 {
+                top: 60px;
+                left: -50px;
+                position: absolute;
+            }
+            .advantagesCardSubitem-02 {
+                bottom: 20px;
+                left: -25px;
+            }
+            .advantagesCardSubitem-03 {
+                bottom: -55px;
+                left: calc(50% - 30px);
+            }
+            .advantagesCardSubitem-04 {
+                bottom: 20px;
+                right: -25px;
+            }
+            .advantagesCardSubitem-05 {
+                top: 60px;
+                right: -50px;
+            }
         }
     }
+
+    @include pad {
+        .advantagesPC {
+            display: none;
+        }
+
+        .advantagesCard{
+            h3 {
+                top: calc(50% - 16.5px);
+                left: calc(50% - 68.6015px);
+            }
+            .col-6 img{
+                height: 80px;
+            }
+        }
+
+    }
+}
+
+.applications {
+    .btn-6t{
+        width: 122px;
+    }
+    .btn-5t{
+        width: 106px;
+    }
+    .btn-3t{
+        width: 74px;
+    }
+    .tag{
+        background: white;
+        color: #001A4A;
+        border-radius: 50rem !important;
+        padding: 2px 14px;
+        margin-right: 6px;
+    }
+    .swiper-wrapper{
+        .col-md-6{
+            height: 400px;
+            @include mobile {
+                height: 250px;
+            }
+        }
+    }
+}
+
+.services {
+    .servicesCard{  
+        .servicesCardImg{
+            height: 300px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            // filter: brightness(50%);
+        }
+        .servicesCardContent{
+            height: 150px;
+            background-color: #1a2c40;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .servicesCardDevelopment{
+            background-image: url(../images/services_development.jpg);
+        }
+        .servicesCardDetect{
+            background-image: url(../images/services_detect.jpg);
+        }
+        .servicesCardSoftware{
+            background-image: url(../images/services_software.jpg);
+        }
+    }
+    // .servicesCard:hover{
+    //     h3{
+    //         font-size: 35px;
+    //     }
+    //     .servicesCardImg{
+    //         filter: brightness(100%);
+    //     }
+    // }
 }
